@@ -29,7 +29,7 @@ public class AdminController {
 	public ResponseEntity<Admin> updateAdminPassword(@RequestParam Integer adminId, @RequestParam String password){
 		Admin updatedAdmin = adminService.updatePassword(adminId,password);
 		return new ResponseEntity<>(updatedAdmin, HttpStatus.OK);
-	}
+	}//hellow wordgit
 
 	@DeleteMapping("/delete")
 	public void deleteAdmin(@RequestParam Integer adminId){
